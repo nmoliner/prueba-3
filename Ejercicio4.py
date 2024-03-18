@@ -66,3 +66,7 @@ term_to_check = 3
 exists = polynomial1.term_exists(term_to_check)
 print(f"El término de grado {term_to_check} {'sí existe' if exists else 'no existe'} en el polinomio.")
 
+if __name__ == "__main__":
+    # Your code here
+    pass
+

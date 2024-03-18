@@ -36,3 +36,16 @@ print("Determinante (Recursivo):", det_recursive)
 # Calculando el determinante utilizando el método iterativo
 det_iterative = matrix_obj.determinant_iterative()
 print("Determinante (Iterativo):", det_iterative)
+
+if __name__ == "__main__":
+    # Ejemplo de matriz 3x3
+    matrix = [[2, 3, 1], [5, 4, 6], [7, 8, 9]]
+    # Creando una instancia de la clase Matrix
+    matrix_obj = Matrix(matrix)
+    # Calculando el determinante utilizando el método recursivo
+    det_recursive = matrix_obj.determinant_recursive()
+    print("Determinante (Recursivo):", det_recursive)
+    # Calculando el determinante utilizando el método iterativo
+    det_iterative = matrix_obj.determinant_iterative()
+    print("Determinante (Iterativo):", det_iterative)
+

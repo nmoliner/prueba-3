@@ -25,3 +25,6 @@ while piedra_mover.origen:
 
 print("Se han trasladado todas las piedras a la columna de destino.")
 
+if __name__ == "__main__":
+    # Aquí va el código que quieres ejecutar cuando se ejecute el archivo directamente
+    pass
