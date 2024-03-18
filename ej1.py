@@ -1,16 +1,17 @@
-def mover_piedras(n, origen, destino, auxiliar):
-    if n == 1:
-        print(f"Mover piedra de {origen} a {destino}")
-        return
-    mover_piedras(n-1, origen, auxiliar, destino)
-    print(f"Mover piedra de {origen} a {destino}")
-    mover_piedras(n-1, auxiliar, destino, origen)
+def mover_piedra(origen, destino):
+    if not destino or origen[-1] < destino[-1]:
+        piedra = origen.pop()
+        destino.append(piedra)
+        print(f"Se movió una piedra de tamaño {piedra} de la columna de origen a la columna de destino.")
+    else:
+        print("No se puede mover la piedra debido a las restricciones.")
 
-def resolver_puzzle_piramide(n):
-    print("Pasos para resolver el puzzle:")
-    mover_piedras(n, 'A', 'C', 'B')
+# Crear las columnas
+columna_origen = list(range(1, 75))  # Columna de origen con 74 piedras
+columna_destino = []
 
-def main():
-    n = int(input("Ingrese el número de piedras: "))
-    resolver_puzzle_piramide(n)
+# Trasladar las piedras de la columna de origen a la columna de destino
+while columna_origen:
+    mover_piedra(columna_origen, columna_destino)
 
+print("Se han trasladado todas las piedras a la columna de destino.")
