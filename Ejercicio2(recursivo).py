@@ -32,10 +32,3 @@ matrix_obj = Matrix(matrix)
 # Calculando el determinante utilizando el método recursivo
 det_recursive = matrix_obj.determinant_recursive()
 print("Determinante (Recursivo):", det_recursive)
-
-# Calculando el determinante utilizando el método iterativo
-det_iterative = matrix_obj.determinant_iterative()
-print("Determinante (Iterativo):", det_iterative)
-
-
-
